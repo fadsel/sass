@@ -1,0 +1,28 @@
+// Note: we use Autoprefixer to add vendor prefixes to our CSS -> https://github.com/postcss/autoprefixer*/
+
+@import '../partials/variables'; // colors, fonts etc...
+
+@import '../partials/mixins'; // custom mixins
+
+@import '../partials/layout'; // responsive grid and media queries
+
+/* -------------------------------- 
+
+    Primary style
+
+-------------------------------- */
+
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	@include font-smoothing;
+}
+
+/* -------------------------------- 
+
+    Your Styles Goes Here
+
+-------------------------------- */
